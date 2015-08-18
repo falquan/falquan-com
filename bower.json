@@ -1,0 +1,17 @@
+{
+  "name": "falquan-com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/falquan/falquan-com",
+  "authors": [
+    "Greg Leppert <leppert.greg@gmail.com>"
+  ],
+  "description": "Falquan.com",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
