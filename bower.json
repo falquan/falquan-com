@@ -6,12 +6,16 @@
     "Greg Leppert <leppert.greg@gmail.com>"
   ],
   "description": "Falquan.com",
-  "license": "MIT",
+  "license": "CC-BY-4.0",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "polymer": "~1.1.0"
+  },
+  "devDependencies": {}
 }

@@ -1,0 +1,19 @@
+header {
+    nav {
+        ul {
+            li:before {
+                content: "\~/";
+            }
+        }
+    }
+}
+
+footer {
+    nav {
+        ul {
+            li:before {
+                content: "\~/";
+            }
+        }
+    }
+}
