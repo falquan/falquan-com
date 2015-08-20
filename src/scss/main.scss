@@ -1,47 +1,23 @@
 @import 'constants';
-
-/* Global class styles */
-
-.hashtag:before {
-    content: "#";
-}
-
-.at:before {
-    content: "@";
-}
-
-span.strikeout {
-    text-decoration: line-through;
-}
-
-/* Semantic Tag Styles */
-
-body {
-    header {
-        background-color: $clamp-background-color;
-
-        nav {
-            ul {
-                li:before {
-                    content: "\~/";
-                }
-            }
-        }
-    }
-}
+@import 'global-classes';
+@import 'clamp';
 
 article {
     header {
-        background-color: #eee
+        background-color: #eee;
     }
 
     section {
         header {
             background-color: #fff;
         }
+
+        footer {
+            background-color: #fff;
+        }
     }
 
-    section#whoami {
+    section#who-am-i {
         header {
             h1 {
                 font-family: $monospace-font-stack;
@@ -55,20 +31,6 @@ article {
             h1:after {
                 content: "_";
                 text-decoration: blink;
-            }
-        }
-    }
-}
-
-body {
-    footer {
-        background-color: $clamp-background-color;
-
-        nav {
-            ul {
-                li:before {
-                    content: "\~/";
-                }
             }
         }
     }

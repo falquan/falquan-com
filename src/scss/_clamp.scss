@@ -1,0 +1,27 @@
+/* Clamp tags */
+
+body {
+    header {
+        background-color: $clamp-background-color;
+
+        nav {
+            ul {
+                li:before {
+                    content: "\~/";
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: $clamp-background-color;
+
+        nav {
+            ul {
+                li:before {
+                    content: "\~/";
+                }
+            }
+        }
+    }
+}

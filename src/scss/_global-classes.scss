@@ -1,0 +1,13 @@
+/* Global classes */
+
+.hashtag:before {
+    content: "#";
+}
+
+.at:before {
+    content: "@";
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
