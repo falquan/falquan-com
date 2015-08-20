@@ -1,18 +1,74 @@
-header {
-    nav {
-        ul {
-            li:before {
-                content: "\~/";
+@import 'constants';
+
+/* Global class styles */
+
+.hashtag:before {
+    content: "#";
+}
+
+.at:before {
+    content: "@";
+}
+
+span.strikeout {
+    text-decoration: line-through;
+}
+
+/* Semantic Tag Styles */
+
+body {
+    header {
+        background-color: $clamp-background-color;
+
+        nav {
+            ul {
+                li:before {
+                    content: "\~/";
+                }
             }
         }
     }
 }
 
-footer {
-    nav {
-        ul {
-            li:before {
-                content: "\~/";
+article {
+    header {
+        background-color: #eee
+    }
+
+    section {
+        header {
+            background-color: #fff;
+        }
+    }
+
+    section#whoami {
+        header {
+            h1 {
+                font-family: $monospace-font-stack;
+                text-transform: lowercase;
+                word-spacing: -.5em;
+            }
+            h1:before {
+                word-spacing: 0em;
+                content: "$\00a0";
+            }
+            h1:after {
+                content: "_";
+                text-decoration: blink;
+            }
+        }
+    }
+}
+
+body {
+    footer {
+        background-color: $clamp-background-color;
+
+        nav {
+            ul {
+                li:before {
+                    content: "\~/";
+                }
             }
         }
     }
