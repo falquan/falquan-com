@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         },
         watch: {
             files: ['src/**'],
-            tasks: ['sass', 'compile']
+            tasks: ['compile']
         }
     });
 
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     // Default task(s).
     //grunt.registerTask('default', ['lint']);
     grunt.registerTask('css', ['sass']);
-    grunt.registerTask('compile', ['copy']);
+    grunt.registerTask('compile', ['sass', 'copy']);
 
     grunt.registerTask('default', ['watch']);
 
